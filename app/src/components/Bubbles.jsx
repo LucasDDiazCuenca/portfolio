@@ -24,13 +24,18 @@ export default function FloatingBubbles() {
         <Canvas shadows dpr={[1, 2]} gl={{ antialias: false }} camera={{ fov: 50, position: [0, 0, 20] }}>
             <color attach="background" args={["#131313"]} />
             <fog attach="fog" args={["#000000", 30, -5]} />
+
             <ambientLight intensity={0.3} />
+
             <pointLight position={[10, 10, 10]} intensity={1} castShadow />
+
             <Bubbles ballcolor="#2a2a2a"/>
+
             <EffectComposer disableNormalPass>
                 <N8AO aoRadius={6} intensity={2} color="#363636" />
                 <TiltShift2 blur={0.2} />
             </EffectComposer>
+            
             <Environment preset="city" />
         </Canvas>
     )
@@ -38,7 +43,9 @@ export default function FloatingBubbles() {
 
 function Bubbles({ballcolor}) {
     const ref = useRef()
-    useFrame((state, delta) => void (ref.current.rotation.y = MathUtils.damp(ref.current.rotation.y, (-state.mouse.x * Math.PI) / 6, 2.75, delta)))
+    useFrame((state, delta) => {
+        void (ref.current.rotation.y = MathUtils.damp(ref.current.rotation.y, (-state.mouse.x * Math.PI) / 6, 2.75, delta))
+    })
     return (
         <Instances limit={particles.length} ref={ref} castShadow receiveShadow position={[0, 2.5, 0]}>
             <sphereGeometry args={[0.45, 64, 64]} />
@@ -53,7 +60,7 @@ function Bubbles({ballcolor}) {
 function Bubble({ factor, speed, xFactor, yFactor, zFactor }) {
     const ref = useRef()
     useFrame((state) => {
-        const t = factor + state.clock.elapsedTime * (speed / 2)
+        const t = factor + state.clock.elapsedTime * (speed / 20)
         ref.current.scale.setScalar(Math.max(1.5, Math.cos(t) * 6))
         ref.current.position.set(
             Math.cos(t) + Math.sin(t * 1) / 10 + xFactor + Math.cos((t / 10) * factor) + (Math.sin(t * 1) * factor) / 10,
