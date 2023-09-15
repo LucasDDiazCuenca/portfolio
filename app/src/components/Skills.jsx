@@ -1,7 +1,7 @@
 
 export default function Skills() {
 
-    return <article className="w-full mt-10 px-8 sm:px-36 relative z-20 text-left text-md sm:text-lg flex gap-3 justify-between">
+    return <article className="w-full mt-10 px-8 sm:px-36 relative z-20 text-left text-md sm:text-lg flex gap-3 justify-between pointer-events-none">
         <h2 className="text-green-600 font-black">SKILLS</h2>
         <div className="flex gap-5">
             <ul>

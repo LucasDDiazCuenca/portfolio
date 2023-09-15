@@ -21,7 +21,7 @@ export default function FloatingBubbles() {
     //     AOColor: "#363636"
     // })
     return (
-        <Canvas shadows dpr={[1, 2]} gl={{ antialias: false }} camera={{ fov: 50, position: [0, 0, 20] }}>
+        <Canvas shadows dpr={[1, 2]} gl={{ antialias: false }} camera={{ fov: 80, position: [0, 0, 20] }}>
             <color attach="background" args={["#131313"]} />
             <fog attach="fog" args={["#000000", 30, -5]} />
 
@@ -33,7 +33,7 @@ export default function FloatingBubbles() {
 
             <EffectComposer disableNormalPass>
                 <N8AO aoRadius={6} intensity={2} color="#363636" />
-                <TiltShift2 blur={0.2} />
+                <TiltShift2 blur={0.4} />
             </EffectComposer>
             
             <Environment preset="city" />
@@ -44,7 +44,7 @@ export default function FloatingBubbles() {
 function Bubbles({ballcolor}) {
     const ref = useRef()
     useFrame((state, delta) => {
-        void (ref.current.rotation.y = MathUtils.damp(ref.current.rotation.y, (-state.mouse.x * Math.PI) / 6, 2.75, delta))
+        void (ref.current.rotation.y = MathUtils.damp(ref.current.rotation.y, (-state.mouse.x * Math.PI) / 6, 1, delta))
     })
     return (
         <Instances limit={particles.length} ref={ref} castShadow receiveShadow position={[0, 2.5, 0]}>
@@ -63,8 +63,8 @@ function Bubble({ factor, speed, xFactor, yFactor, zFactor }) {
         const t = factor + state.clock.elapsedTime * (speed / 20)
         ref.current.scale.setScalar(Math.max(1.5, Math.cos(t) * 6))
         ref.current.position.set(
-            Math.cos(t) + Math.sin(t * 1) / 10 + xFactor + Math.cos((t / 10) * factor) + (Math.sin(t * 1) * factor) / 10,
-            Math.sin(t) + Math.cos(t * 2) / 10 + yFactor + Math.sin((t / 10) * factor) + (Math.cos(t * 2) * factor) / 10,
+            Math.cos(t) + Math.sin(t * 10) / 10 + xFactor + Math.cos((t / 10) * factor) + (Math.sin(t * 1) * factor) / 10,
+            Math.sin(t) + Math.cos(t * 1) / 10 + yFactor + Math.sin((t / 10) * factor) + (Math.cos(t * 2) * factor) / 10,
             Math.sin(t) + Math.cos(t * 2) / 10 + zFactor + Math.cos((t / 10) * factor) + (Math.sin(t * 3) * factor) / 4
         )
     })
