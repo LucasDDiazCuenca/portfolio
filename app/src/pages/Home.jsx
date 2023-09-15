@@ -6,7 +6,7 @@ import IntroInformation from "../components/IntroInformation"
 export default function Home() {
     return <div className="h-screen text-white">
         
-        <div className="absolute w-full h-[60rem] z-10">
+        <div className="absolute w-full h-[70rem] z-10 border-example">
             <FloatingBubbles />
         </div>
 
@@ -16,7 +16,7 @@ export default function Home() {
 
         <Skills/>
 
-        <p className="w-full mt-10 px-8 sm:px-36 relative z-20 text-left text-md sm:text-lg flex gap-3 justify-between pointer-events-none">
+        {/* <p className="w-full mt-10 px-8 sm:px-36 relative z-20 text-left text-md sm:text-lg flex gap-3 justify-between pointer-events-none">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta aspernatur cumque aliquam, quae, nostrum vel culpa alias possimus, eaque ad maxime? Ea enim labore dolorem voluptate incidunt eius animi!
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit error dolor veritatis eum totam dolorum quidem sint. Repellendus, maiores perspiciatis! Deleniti exercitationem illo eius excepturi, debitis nostrum nemo qui consequatur?
             Reiciendis necessitatibus quam expedita esse deserunt laboriosam quibusdam, mollitia perspiciatis vero blanditiis. Harum omnis deleniti quam, optio ullam nesciunt pariatur velit, beatae cumque necessitatibus cupiditate soluta provident cum, ipsam labore?
@@ -27,7 +27,7 @@ export default function Home() {
             Dolore tempore rerum error iusto veniam impedit. Fuga aut quos possimus labore minus, blanditiis officiis a dolorum sapiente quae quod alias molestiae dolorem soluta impedit in odit animi dicta eius.
             Adipisci enim at nesciunt optio? Nemo non sed odio quidem id. Vero, tenetur. Blanditiis quod enim esse repellat error sint saepe nisi illo quia magni harum, tenetur, voluptatum minus! Dignissimos!
         
-        </p>
+        </p> */}
 
     </div >
 }

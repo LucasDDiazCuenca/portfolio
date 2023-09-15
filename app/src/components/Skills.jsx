@@ -1,46 +1,46 @@
 
 export default function Skills() {
 
-    return <article className="w-full mt-10 px-8 sm:px-36 relative z-20 text-left text-md sm:text-lg flex gap-3 justify-between pointer-events-none">
-        <h2 className="text-green-600 font-black">SKILLS</h2>
+    return <article className="w-full mt-20 px-8 sm:px-36 relative z-20 text-left text-md sm:text-lg flex gap-3 justify-center pointer-events-none">
+        <h2 className="text-yellow-500 font-black sm:text-2xl mr-10">SKILLS</h2>
         <div className="flex gap-5">
             <ul>
-                <li className="font-bold">LANGUAGES</li>
-                <li className="font-extralight">JavaScript(ES6)</li>
-                <li className="font-extralight">Typescript</li>
-                <li className="font-extralight">HTML</li>
-                <li className="font-extralight">CSS/Sass</li>
+                <li className="font-bold text-yellow-100 sm:text-xl">LANGUAGES</li>
+                <li className="font-extralight sm:text-xl">JavaScript(ES6)</li>
+                <li className="font-extralight sm:text-xl">Typescript</li>
+                <li className="font-extralight sm:text-xl">HTML</li>
+                <li className="font-extralight sm:text-xl">CSS/Sass</li>
             </ul>
             <ul>
-                <li className="font-bold">FRAMEWORKS</li>
-                <li className="font-extralight">React</li>
-                <li className="font-extralight">Node.js</li>
-                <li className="font-extralight">MongoDB</li>
-                <li className="font-extralight">Mongoose</li>
-                <li className="font-extralight">Three.js</li>
-                <li className="font-extralight">React Three Fiber</li>
-                <li className="font-extralight">Bootstrap</li>
-                <li className="font-extralight">Tailwind</li>
+                <li className="font-bold text-yellow-10 sm:text-xl">FRAMEWORKS</li>
+                <li className="font-extralight sm:text-xl">React</li>
+                <li className="font-extralight sm:text-xl">Node.js</li>
+                <li className="font-extralight sm:text-xl">MongoDB</li>
+                <li className="font-extralight sm:text-xl">Mongoose</li>
+                <li className="font-extralight sm:text-xl">Three.js</li>
+                <li className="font-extralight sm:text-xl">React Three Fiber</li>
+                <li className="font-extralight sm:text-xl">Bootstrap</li>
+                <li className="font-extralight sm:text-xl">Tailwind</li>
             </ul>
             <ul>
-                <li className="font-bold">TOOLS</li>
-                <li className="font-extralight">Bash</li>
-                <li className="font-extralight">Git & GitHub</li>
-                <li className="font-extralight">Chrome DevTools</li>
-                <li className="font-extralight">R3F DREI</li>
-                <li className="font-extralight">Leva</li>
-                <li className="font-extralight">Imsomnia</li>
-                <li className="font-extralight">Vite</li>
-                <li className="font-extralight">Mocha & Chai</li>
+                <li className="font-bold text-yellow-100 sm:text-xl">TOOLS</li>
+                <li className="font-extralight ">Bash</li>
+                <li className="font-extralight sm:text-xl">Git & GitHub</li>
+                <li className="font-extralight sm:text-xl">Chrome DevTools</li>
+                <li className="font-extralight sm:text-xl">R3F DREI</li>
+                <li className="font-extralight sm:text-xl">Leva</li>
+                <li className="font-extralight sm:text-xl">Imsomnia</li>
+                <li className="font-extralight sm:text-xl">Vite</li>
+                <li className="font-extralight sm:text-xl">Mocha & Chai</li>
             </ul>
             <ul>
-                <li className="font-bold">DESIGN</li>
-                <li className="font-extralight">Figma</li>
-                <li className="font-extralight">Blender</li>
-                <li className="font-extralight">InDesign</li>
-                <li className="font-extralight">Illustrator</li>
-                <li className="font-extralight">Photoshop</li>
-                <li className="font-extralight">PremierePro</li>
+                <li className="font-bold text-yellow-100 sm:text-xl">DESIGN</li>
+                <li className="font-extralight sm:text-xl">Figma</li>
+                <li className="font-extralight sm:text-xl">Blender</li>
+                <li className="font-extralight sm:text-xl">InDesign</li>
+                <li className="font-extralight sm:text-xl">Illustrator</li>
+                <li className="font-extralight sm:text-xl">Photoshop</li>
+                <li className="font-extralight sm:text-xl">PremierePro</li>
             </ul>
         </div>
     </article>
