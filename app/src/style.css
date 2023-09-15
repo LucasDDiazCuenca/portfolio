@@ -4,12 +4,12 @@
 
 
 html, body, #root{
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; 
-    background-color: #242424;
+    overflow: hidden;  */
+    background-color: #131313;
     font-family: 'Inconsolata', monospace;
 }
