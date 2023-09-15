@@ -5,7 +5,7 @@ import { Instances, Instance, Environment } from '@react-three/drei'
 import { EffectComposer, N8AO, TiltShift2 } from '@react-three/postprocessing'
 import { useControls} from "leva"
 
-const particles = Array.from({ length: 222 }, () => ({
+const particles = Array.from({ length: 150 }, () => ({
     factor: MathUtils.randInt(20, 100),
     speed: MathUtils.randFloat(0.01, 0.75),
     xFactor: MathUtils.randFloatSpread(40),
@@ -32,7 +32,7 @@ export default function FloatingBubbles() {
             <Bubbles ballcolor="#2a2a2a"/>
 
             <EffectComposer disableNormalPass>
-                <N8AO aoRadius={6} intensity={2} color="#363636" />
+                <N8AO aoRadius={5} intensity={1} color="#363636" />
                 <TiltShift2 blur={0.4} />
             </EffectComposer>
             
@@ -44,7 +44,7 @@ export default function FloatingBubbles() {
 function Bubbles({ballcolor}) {
     const ref = useRef()
     useFrame((state, delta) => {
-        void (ref.current.rotation.y = MathUtils.damp(ref.current.rotation.y, (-state.mouse.x * Math.PI) / 6, 1, delta))
+        void (ref.current.rotation.y = MathUtils.damp(ref.current.rotation.y, (-state.mouse.x * Math.PI) / 6, 0.5, delta))
     })
     return (
         <Instances limit={particles.length} ref={ref} castShadow receiveShadow position={[0, 2.5, 0]}>
@@ -60,7 +60,7 @@ function Bubbles({ballcolor}) {
 function Bubble({ factor, speed, xFactor, yFactor, zFactor }) {
     const ref = useRef()
     useFrame((state) => {
-        const t = factor + state.clock.elapsedTime * (speed / 20)
+        const t = factor + state.clock.elapsedTime * (speed / 30)
         ref.current.scale.setScalar(Math.max(1.5, Math.cos(t) * 6))
         ref.current.position.set(
             Math.cos(t) + Math.sin(t * 10) / 10 + xFactor + Math.cos((t / 10) * factor) + (Math.sin(t * 1) * factor) / 10,
