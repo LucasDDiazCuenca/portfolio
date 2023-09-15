@@ -1,18 +1,18 @@
 
 export default function Skills() {
 
-    return <article className="w-full mt-20 px-8 sm:px-36 relative z-20 text-left text-md sm:text-lg flex gap-3 justify-center pointer-events-none">
-        <h2 className="text-yellow-500 font-black sm:text-2xl mr-10">SKILLS</h2>
-        <div className="flex gap-5">
+    return <article className="w-10/12 mt-20 relative z-20 text-left text-md sm:text-lg flex gap-10 justify-around xl:justify-center pointer-events-none xl:my-44">
+        <h2 className="text-yellow-500 text-right font-black sm:text-2xl w-2/12">SKILLS</h2>
+        <div className="flex w-10/12 xl:w-8/12 gap-5 xl:justify-center">
             <ul>
-                <li className="font-bold text-yellow-100 sm:text-xl">LANGUAGES</li>
+                <li className="font-bold text-yellow-200 sm:text-xl">LANGUAGES</li>
                 <li className="font-extralight sm:text-xl">JavaScript(ES6)</li>
                 <li className="font-extralight sm:text-xl">Typescript</li>
                 <li className="font-extralight sm:text-xl">HTML</li>
                 <li className="font-extralight sm:text-xl">CSS/Sass</li>
             </ul>
             <ul>
-                <li className="font-bold text-yellow-10 sm:text-xl">FRAMEWORKS</li>
+                <li className="font-bold text-yellow-200 sm:text-xl">FRAMEWORKS</li>
                 <li className="font-extralight sm:text-xl">React</li>
                 <li className="font-extralight sm:text-xl">Node.js</li>
                 <li className="font-extralight sm:text-xl">MongoDB</li>
@@ -23,7 +23,7 @@ export default function Skills() {
                 <li className="font-extralight sm:text-xl">Tailwind</li>
             </ul>
             <ul>
-                <li className="font-bold text-yellow-100 sm:text-xl">TOOLS</li>
+                <li className="font-bold text-yellow-200 sm:text-xl">TOOLS</li>
                 <li className="font-extralight ">Bash</li>
                 <li className="font-extralight sm:text-xl">Git & GitHub</li>
                 <li className="font-extralight sm:text-xl">Chrome DevTools</li>
@@ -34,7 +34,7 @@ export default function Skills() {
                 <li className="font-extralight sm:text-xl">Mocha & Chai</li>
             </ul>
             <ul>
-                <li className="font-bold text-yellow-100 sm:text-xl">DESIGN</li>
+                <li className="font-bold text-yellow-200 sm:text-xl">DESIGN</li>
                 <li className="font-extralight sm:text-xl">Figma</li>
                 <li className="font-extralight sm:text-xl">Blender</li>
                 <li className="font-extralight sm:text-xl">InDesign</li>

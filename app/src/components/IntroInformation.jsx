@@ -1,10 +1,10 @@
 
 export default function IntroInformation() {
 
-    return <article className="w-full mt-10 px-8 sm:px-36 relative z-20 text-left text-md sm:text-2xl ">
+    return <article className="w-full mt-10 xl:my-60  px-8 sm:px-36 relative z-20 text-left text-md sm:text-2xl pointer-events-none">
         <div className="pointer-events-none">
             <p className="py-3">
-                Hi there 👋🏻, My name is <b className="text-yellow-500">Lucas Diaz</b> and I'm a Fullstack Developer with a Frontend specialization. In 2021, I began my journey in digital interaction and web programming degree, in UOC (Universitat Oberta de Catalunya), followed by an intensive Fullstack Web Design bootcamp this year (2023) by ISDI Coders. I excel in clean code, best practices, and 3D design, particularly using Three.js & R3F.
+                Hi there 👋🏻, My name is <b className="text-yellow-500">Lucas Diaz</b> and I'm a Fullstack Developer with a Frontend specialization. In 2021, I began my journey in digital interaction and web programming degree, in UOC (Universitat Oberta de Catalunya), followed by an intensive Fullstack Web Design bootcamp this year (2023) in ISDI Coders. I excel in clean code, best practices, and 3D design, particularly using Three.js & R3F.
             </p>
 
             <p className="py-3">
