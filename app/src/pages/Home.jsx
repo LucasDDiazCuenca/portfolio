@@ -3,6 +3,7 @@ import Menu from "../components/Menu"
 import Skills from "../components/Skills"
 import IntroInformation from "../components/IntroInformation"
 import IntroProjects from "../components/IntroProjects"
+import Footer from "../components/Footer"
 
 export default function Home() {
     return <div className="h-screen text-white">
@@ -19,9 +20,9 @@ export default function Home() {
 
             <Skills />
 
-            <IntroProjects/>
+            <IntroProjects />
 
         </main>
-
+        <Footer />
     </div >
 }

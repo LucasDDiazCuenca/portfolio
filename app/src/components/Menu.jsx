@@ -7,9 +7,7 @@ export default function Menu() {
         </div>
         <div className="flex mr-4">
             <ul className="w-full flex gap-8 items-center text-xl">
-                <li className="cursor-pointer border-b border-transparent hover:border-yellow-500 hover:text-yellow-500 transition-all">
-                    Projects
-                </li>
+                <li className="cursor-pointer border-b border-transparent hover:border-yellow-500 hover:text-yellow-500 transition-all">Projects</li>
                 <li className="cursor-pointer border-b border-transparent hover:border-yellow-500 hover:text-yellow-500 transition-all">3D</li>
                 <li className="cursor-pointer border-b border-transparent hover:border-yellow-500 hover:text-yellow-500 transition-all">About me</li>
             </ul>
