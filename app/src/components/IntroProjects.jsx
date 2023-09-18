@@ -1,7 +1,7 @@
 
 export default function IntroProjects() {
 
-    return <section className="w-10/12 mt-20 relative z-20 text-left text-md sm:text-lg flex justify-around xl:justify-center pointer-events-none gap-10">
+    return <section className="w-10/12 mt-20 relative z-20 text-left text-md sm:text-lg flex justify-around xl:justify-center pointer-events-none gap-10 xl:mb-44">
 
         <h2 className="text-yellow-500 text-right font-black sm:text-2xl w-2/12">PROJECTS</h2>
 
