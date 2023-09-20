@@ -1,10 +1,12 @@
 
 export default function Skills() {
 
-    return <article className="w-10/12 mt-20 relative z-20 text-left text-md sm:text-lg flex gap-10 justify-around xl:justify-center pointer-events-none xl:my-44">
-        <h2 className="text-yellow-500 text-right font-black sm:text-2xl w-2/12">SKILLS</h2>
-        <div className="flex w-10/12 xl:w-8/12 gap-5 xl:justify-center">
-            <ul>
+    return <article className="w-10/12 mt-20 relative z-10 text-center sm:text-left text-md sm:text-lg flex flex-col sm:flex-row gap-8 sm:gap-10 justify-around xl:justify-center pointer-events-none xl:my-44">
+
+
+        <h2 className="text-yellow-500 text-center sm:text-right font-black text-2xl  sm:w-2/12">SKILLS</h2>
+        <div className="flex flex-col sm:flex-row w-full sm:w-10/12 xl:w-8/12 gap-5 xl:justify-center">
+            <ul className="">
                 <li className="font-bold text-yellow-200 sm:text-xl">LANGUAGES</li>
                 <li className="font-extralight sm:text-xl">JavaScript(ES6)</li>
                 <li className="font-extralight sm:text-xl">Typescript</li>
