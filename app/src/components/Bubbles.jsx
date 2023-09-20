@@ -3,7 +3,6 @@ import { useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Instances, Instance, Environment } from '@react-three/drei'
 import { EffectComposer, N8AO, TiltShift2 } from '@react-three/postprocessing'
-import { useControls} from "leva"
 
 const particles = Array.from({ length: 150 }, () => ({
     factor: MathUtils.randInt(20, 100),
@@ -14,12 +13,6 @@ const particles = Array.from({ length: 150 }, () => ({
 }))
 
 export default function FloatingBubbles() {
-    // const {sceneBackground, fog, ballcolor, AOColor} = useControls("Ball", {
-    //     sceneBackground: "#131313",
-    //     fog: "#000000",
-    //     ballcolor: "#2a2a2a",
-    //     AOColor: "#363636"
-    // })
     return (
         <Canvas shadows dpr={[1, 2]} gl={{ antialias: false }} camera={{ fov: 80, position: [0, 0, 20] }}>
             <color attach="background" args={["#131313"]} />
